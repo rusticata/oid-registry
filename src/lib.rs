@@ -1,12 +1,17 @@
+//! [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE-MIT)
+//! [![Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE-APACHE)
+//! [![docs.rs](https://docs.rs/oid-registry/badge.svg)](https://docs.rs/oid-registry)
+//! [![crates.io](https://img.shields.io/crates/v/oid-registry.svg)](https://crates.io/crates/oid-registry)
+//! [![Github CI](https://github.com/rusticata/oid-registry/workflows/Continuous%20integration/badge.svg)](https://github.com/rusticata/oid-registry/actions)
 //! # OID Registry
 //!
-//! This crate is a helper crate, containing a database of OID objects. These objets are intended
+//! This crate is a helper crate, containing a database of OID objects. These objects are intended
 //! for use when manipulating ASN.1 grammars and BER/DER encodings, for example.
 //!
 //! This crate provides only a simple registry (similar to a `HashMap`) by default. This object can
 //! be used to get names and descriptions from OID.
 //!
-//! By default, the registry is provided emty.
+//! By default, the registry is provided empty.
 //! This crate can provide default lists of known OIDs, that can be selected using the build
 //! features.
 
