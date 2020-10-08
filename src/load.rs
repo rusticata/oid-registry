@@ -3,15 +3,28 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, Result, Write};
 use std::path::Path;
 
-pub struct Entry {
-    name: String,
-    oid: String,
-    sn: String,
-    description: String,
+/// Temporary structure, created when reading a file containing OID declarations
+#[derive(Debug)]
+pub struct LoadedEntry {
+    pub name: String,
+    pub oid: String,
+    pub sn: String,
+    pub description: String,
 }
 
-pub type LoadedMap = HashMap<String, Vec<Entry>>;
+/// Temporary structure, created when reading a file containing OID declarations
+pub type LoadedMap = HashMap<String, Vec<LoadedEntry>>;
 
+/// Load a file to an OID description map
+///
+/// format of the file: tab-separated values
+/// <pre>
+/// feature   name   oid   short_name   description (until end of line)
+/// </pre>
+///
+/// `name` is used to declare a global constant when creating output file (see `generate_file`).
+/// If `name` is "" then no constant will be written
+///
 pub fn load_file<P: AsRef<Path>>(path: P) -> Result<LoadedMap> {
     let mut map = HashMap::new();
 
@@ -29,7 +42,7 @@ pub fn load_file<P: AsRef<Path>>(path: P) -> Result<LoadedMap> {
         let sn = iter.next().expect("invalid oid_db format: missing short name").to_string();
         let description = iter.next().expect("invalid oid_db format: missing description").to_string();
 
-        let entry = Entry {
+        let entry = LoadedEntry {
             name,
             oid,
             sn,
@@ -43,6 +56,7 @@ pub fn load_file<P: AsRef<Path>>(path: P) -> Result<LoadedMap> {
     Ok(map)
 }
 
+/// Generate a file containing a `with_<feat>` method for OidRegistry
 pub fn generate_file<P: AsRef<Path>>(map: &LoadedMap, dest_path: P) -> Result<()> {
     let mut out_file = File::create(&dest_path)?;
     for feat_entries in map.values() {
