@@ -9,6 +9,7 @@ homepage = "https://github.com/rusticata/oid-registry"
 repository = "https://github.com/rusticata/oid-registry.git"
 edition = "2018"
 build = "build.rs"
+readme = "README.md"
 
 [package.metadata.docs.rs]
 all-features = true
