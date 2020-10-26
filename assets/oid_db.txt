@@ -6,17 +6,17 @@
 #
 x962	OID_KEY_TYPE_EC_PUBLIC_KEY	1.2.840.10045.2.1	id-ecPublicKey	Elliptic curve public key cryptography
 
-rsadsi	OID_RSA_DSI_PKCS1_RSAENCRYPTION	1.2.840.113549.1.1.1	rsaEncryption	RSAES-PKCS1-v1_5 encryption scheme
-rsadsi	OID_RSA_DSI_PKCS1_MD2WITHRSAENC	1.2.840.113549.1.1.2	md2WithRSAEncryption	MD2 with RSA encryption
-rsadsi	OID_RSA_DSI_PKCS1_MD4WITHRSAENC	1.2.840.113549.1.1.3	md4WithRSAEncryption	MD4 with RSA encryption
-rsadsi	OID_RSA_DSI_PKCS1_MD5WITHRSAENC	1.2.840.113549.1.1.4	md5WithRSAEncryption	MD5 with RSA encryption
-rsadsi	OID_RSA_DSI_PKCS1_SHA1WITHRSA	1.2.840.113549.1.1.5	sha1WithRSAEncryption	SHA1 with RSA encryption
+pkcs1	OID_PKCS1_RSAENCRYPTION	1.2.840.113549.1.1.1	rsaEncryption	RSAES-PKCS1-v1_5 encryption scheme
+pkcs1	OID_PKCS1_MD2WITHRSAENC	1.2.840.113549.1.1.2	md2WithRSAEncryption	MD2 with RSA encryption
+pkcs1	OID_PKCS1_MD4WITHRSAENC	1.2.840.113549.1.1.3	md4WithRSAEncryption	MD4 with RSA encryption
+pkcs1	OID_PKCS1_MD5WITHRSAENC	1.2.840.113549.1.1.4	md5WithRSAEncryption	MD5 with RSA encryption
+pkcs1	OID_PKCS1_SHA1WITHRSA	1.2.840.113549.1.1.5	sha1WithRSAEncryption	SHA1 with RSA encryption
 
-rsadsi	OID_RSA_DSI_PKCS1_RSASSAPSS	1.2.840.113549.1.1.10	rsassa-pss	RSA Signature Scheme with Probabilistic Signature Scheme (RSASSA-PSS)
-rsadsi	OID_RSA_DSI_PKCS1_SHA256WITHRSA	1.2.840.113549.1.1.11	sha256WithRSAEncryption	SHA256 with RSA encryption
-rsadsi	OID_RSA_DSI_PKCS1_SHA384WITHRSA	1.2.840.113549.1.1.12	sha384WithRSAEncryption	SHA384 with RSA encryption
-rsadsi	OID_RSA_DSI_PKCS1_SHA512WITHRSA	1.2.840.113549.1.1.13	sha512WithRSAEncryption	SHA512 with RSA encryption
-rsadsi	OID_RSA_DSI_PKCS1_SHA224WITHRSA	1.2.840.113549.1.1.14	sha224WithRSAEncryption	SHA224 with RSA encryption
+pkcs1	OID_PKCS1_RSASSAPSS	1.2.840.113549.1.1.10	rsassa-pss	RSA Signature Scheme with Probabilistic Signature Scheme (RSASSA-PSS)
+pkcs1	OID_PKCS1_SHA256WITHRSA	1.2.840.113549.1.1.11	sha256WithRSAEncryption	SHA256 with RSA encryption
+pkcs1	OID_PKCS1_SHA384WITHRSA	1.2.840.113549.1.1.12	sha384WithRSAEncryption	SHA384 with RSA encryption
+pkcs1	OID_PKCS1_SHA512WITHRSA	1.2.840.113549.1.1.13	sha512WithRSAEncryption	SHA512 with RSA encryption
+pkcs1	OID_PKCS1_SHA224WITHRSA	1.2.840.113549.1.1.14	sha224WithRSAEncryption	SHA224 with RSA encryption
 
 pkcs7	OID_PKCS7_ID_DATA	1.2.840.113549.1.7.1	pkcs7-data	pkcs7-data
 pkcs7	OID_PKCS7_ID_SIGNED_DATA	1.2.840.113549.1.7.2	pkcs7-signedData	PKCS#7 Signed Data

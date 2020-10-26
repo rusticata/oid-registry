@@ -25,7 +25,7 @@ let mut registry = OidRegistry::default()
     .with_crypto() // only if the 'crypto' feature is enabled
 ;
 
-let e = registry.get(&oid_registry::OID_RSA_DSI_PKCS1_SHA256WITHRSA);
+let e = registry.get(&oid_registry::OID_PKCS1_SHA256WITHRSA);
 if let Some(entry) = e {
     // get sn: sha256WithRSAEncryption
     println!("sn: {}", entry.sn());

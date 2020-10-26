@@ -27,7 +27,7 @@
 //! # }
 //! ;
 //!
-//! let e = registry.get(&oid_registry::OID_RSA_DSI_PKCS1_SHA256WITHRSA);
+//! let e = registry.get(&oid_registry::OID_PKCS1_SHA256WITHRSA);
 //! if let Some(entry) = e {
 //!     // get sn: sha256WithRSAEncryption
 //!     println!("sn: {}", entry.sn());
@@ -197,7 +197,7 @@ impl OidRegistry {
     #[cfg(feature = "crypto")]
     #[cfg_attr(docsrs, doc(cfg(feature = "crypto")))]
     pub fn with_crypto(self) -> Self {
-        self.with_rsadsi().with_x962().with_kdf().with_nist_algs()
+        self.with_pkcs1().with_x962().with_kdf().with_nist_algs()
     }
 
     /// Populate registry with all known crypto OIDs (encryption, hash algorithms, PKCS constants,
