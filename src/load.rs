@@ -70,6 +70,11 @@ pub fn generate_file<P: AsRef<Path>>(map: &LoadedMap, dest_path: P) -> Result<()
     writeln!(out_file, "impl OidRegistry {{")?;
     for (k, v) in map {
         writeln!(out_file, r#"    #[cfg(feature = "{}")]"#, k)?;
+        writeln!(
+            out_file,
+            r#"    #[doc = "Load all known OIDs for feature `{}` in the registry."]"#,
+            k
+        )?;
         writeln!(out_file, "    pub fn with_{}(mut self) -> Self {{", k)?;
         for item in v {
             writeln!(

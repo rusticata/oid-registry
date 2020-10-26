@@ -11,9 +11,57 @@
 //! This crate provides only a simple registry (similar to a `HashMap`) by default. This object can
 //! be used to get names and descriptions from OID.
 //!
-//! By default, the registry is provided empty.
-//! This crate can provide default lists of known OIDs, that can be selected using the build
-//! features.
+//! This crate provides default lists of known OIDs, that can be selected using the build features.
+//! By default, the registry has no feature enabled, to avoid embedding a huge database in crates.
+//!
+//! It also declares constants for most of these OIDs.
+//!
+//! ```rust
+//! use oid_registry::OidRegistry;
+//!
+//! let mut registry = OidRegistry::default()
+//! # ;
+//! # #[cfg(feature = "crypto")] {
+//! #     registry = registry
+//!     .with_crypto() // only if the 'crypto' feature is enabled
+//! # }
+//! ;
+//!
+//! let e = registry.get(&oid_registry::OID_RSA_DSI_PKCS1_SHA256WITHRSA);
+//! if let Some(entry) = e {
+//!     // get sn: sha256WithRSAEncryption
+//!     println!("sn: {}", entry.sn());
+//!     // get description: SHA256 with RSA encryption
+//!     println!("description: {}", entry.description());
+//! }
+//!
+//! ```
+//!
+//! ## Extending the registry
+//!
+//! These provided lists are often incomplete, or may lack some specific OIDs.
+//! This is why the registry allows adding new entries after construction:
+//!
+//! ```rust
+//! use oid_registry::{OidEntry, OidRegistry};
+//! use der_parser::oid;
+//!
+//! let mut registry = OidRegistry::default();
+//!
+//! // entries can be added by creating an OidEntry object:
+//! let entry = OidEntry::new("shortName", "description");
+//! registry.insert(oid!(1.2.3.4), entry);
+//!
+//! // when using static strings, a tuple can also be used directly for the entry:
+//! registry.insert(oid!(1.2.3.5), ("shortName", "A description"));
+//!
+//! ```
+//!
+//! ## Contributing OIDs
+//!
+//! All OID values, constants, and features are derived from files in the `assets` directory in the
+//! build script (see `build.rs`).
+//! See `load_file` for documentation of the file format.
 
 #![deny(/*missing_docs,*/
           unstable_features,
