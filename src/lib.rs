@@ -63,11 +63,7 @@
 //! build script (see `build.rs`).
 //! See `load_file` for documentation of the file format.
 
-#![deny(/*missing_docs,*/
-          unstable_features,
-          unused_import_braces,
-          unused_qualifications,
-          unreachable_pub)]
+#![deny(missing_docs, unstable_features, unused_import_braces, unused_qualifications, unreachable_pub)]
 #![forbid(unsafe_code)]
 #![warn(
       /* missing_docs,
@@ -107,11 +103,13 @@ impl OidEntry {
         OidEntry { sn, description }
     }
 
+    /// Get the short name for this entry
     #[inline]
     pub fn sn(&self) -> &str {
         &self.sn
     }
 
+    /// Get the description for this entry
     #[inline]
     pub fn description(&self) -> &str {
         &self.description

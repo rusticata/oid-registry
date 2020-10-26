@@ -6,9 +6,15 @@ use std::path::Path;
 /// Temporary structure, created when reading a file containing OID declarations
 #[derive(Debug)]
 pub struct LoadedEntry {
+    /// Name of the global constant for this entry.
+    ///
+    /// If `name` is "", then no global constant is defined
     pub name: String,
+    /// Textual representation of OID (ex: 2.5.4.3)
     pub oid: String,
+    /// A short name to describe OID. Should be unique (no check is done)
     pub sn: String,
+    /// A description for this entry
     pub description: String,
 }
 
