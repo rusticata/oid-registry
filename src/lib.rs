@@ -195,7 +195,7 @@ impl OidRegistry {
 
     /// Populate registry with common crypto OIDs (encryption, hash algorithms)
     #[cfg(feature = "crypto")]
-    #[doc(cfg(crypto))]
+    #[cfg_attr(docsrs, doc(cfg(feature = "crypto")))]
     pub fn with_crypto(self) -> Self {
         self.with_rsadsi().with_x962().with_kdf().with_nist_algs()
     }
@@ -203,7 +203,7 @@ impl OidRegistry {
     /// Populate registry with all known crypto OIDs (encryption, hash algorithms, PKCS constants,
     /// etc.)
     #[cfg(feature = "crypto")]
-    #[doc(cfg(crypto))]
+    #[cfg_attr(docsrs, doc(cfg(feature = "crypto")))]
     pub fn with_all_crypto(self) -> Self {
         self.with_crypto().with_pkcs7().with_pkcs9()
     }
