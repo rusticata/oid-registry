@@ -196,14 +196,14 @@ impl OidRegistry {
     /// Populate registry with common crypto OIDs (encryption, hash algorithms)
     #[cfg(feature = "crypto")]
     pub fn with_crypto(self) -> Self {
-        self.with_rsadsi().with_nist_hash()
+        self.with_rsadsi().with_x962().with_kdf().with_nist_algs()
     }
 
     /// Populate registry with all known crypto OIDs (encryption, hash algorithms, PKCS constants,
     /// etc.)
     #[cfg(feature = "crypto")]
     pub fn with_all_crypto(self) -> Self {
-        self.with_rsadsi().with_nist_hash().with_pkcs7().with_pkcs9()
+        self.with_crypto().with_pkcs7().with_pkcs9()
     }
 }
 

@@ -16,13 +16,15 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [features]
 default = []
-crypto = ["rsadsi","pkcs7","pkcs9","nist_hash"]
+crypto = ["rsadsi","kdf","pkcs7","pkcs9","nist_algs","x962"]
+kdf = []
 ms_spc = []
-nist_hash = []
+nist_algs = []
 pkcs7 = []
 pkcs9 = []
 rsadsi = []
 x509 = []
+x962 = []
 
 [dependencies]
 der-parser = "4.1"
