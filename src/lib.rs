@@ -191,6 +191,34 @@ impl OidRegistry {
         self.map.iter()
     }
 
+    /// Return the `(Oid, OidEntry)` key/value pairs, matching a short name
+    ///
+    /// The registry should not contain entries with same short name to avoid ambiguity, but it is
+    /// not mandatory.
+    ///
+    /// This function returns an iterator over the key/value pairs. In most cases, it will have 0
+    /// (not found) or 1 item, but can contain more if there are multiple definitions.
+    ///
+    /// ```rust
+    /// # use oid_registry::OidRegistry;
+    /// #
+    /// # let registry = OidRegistry::default();
+    /// // iterate all entries matching "shortName"
+    /// for (oid, entry) in registry.iter_by_sn("shortName") {
+    ///     // do something
+    /// }
+    ///
+    /// // if you are *sure* that there is at most one entry:
+    /// let opt_sn = registry.iter_by_sn("shortName").next();
+    /// if let Some((oid, entry)) = opt_sn {
+    ///     // do something
+    /// }
+    /// ```
+    pub fn iter_by_sn<S: Into<String>>(&self, sn: S) -> impl Iterator<Item = (&Oid<'static>, &OidEntry)> {
+        let s = sn.into();
+        self.map.iter().filter(move |(_, entry)| entry.sn == s)
+    }
+
     /// Populate registry with common crypto OIDs (encryption, hash algorithms)
     #[cfg(feature = "crypto")]
     #[cfg_attr(docsrs, doc(cfg(feature = "crypto")))]
@@ -241,6 +269,9 @@ mod tests {
         registry.insert(oid!(1.2.4.1), e);
 
         registry.insert(oid!(1.2.5.1), ("a", "b"));
+
+        let iter = registry.iter_by_sn("test");
+        assert_eq!(iter.count(), 2);
 
         // dbg!(&registry);
     }
