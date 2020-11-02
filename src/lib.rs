@@ -158,13 +158,13 @@ impl From<(&'static str, &'static str)> for OidEntry {
 /// }
 /// ```
 #[derive(Debug, Default)]
-pub struct OidRegistry {
-    map: HashMap<Oid<'static>, OidEntry>,
+pub struct OidRegistry<'a> {
+    map: HashMap<Oid<'a>, OidEntry>,
 }
 
-impl OidRegistry {
+impl<'a> OidRegistry<'a> {
     /// Insert a new entry
-    pub fn insert<E>(&mut self, oid: Oid<'static>, entry: E) -> Option<OidEntry>
+    pub fn insert<E>(&mut self, oid: Oid<'a>, entry: E) -> Option<OidEntry>
     where
         E: Into<OidEntry>,
     {
@@ -172,12 +172,12 @@ impl OidRegistry {
     }
 
     /// Returns a reference to the registry entry, if found for this OID.
-    pub fn get(&self, oid: &Oid<'static>) -> Option<&OidEntry> {
+    pub fn get(&self, oid: &Oid<'a>) -> Option<&OidEntry> {
         self.map.get(oid)
     }
 
     /// Return an Iterator over references to the OID numbers (registry keys)
-    pub fn keys(&self) -> impl Iterator<Item = &Oid<'static>> {
+    pub fn keys(&self) -> impl Iterator<Item = &Oid<'a>> {
         self.map.keys()
     }
 
@@ -187,7 +187,7 @@ impl OidRegistry {
     }
 
     /// Return an Iterator over references to the `(Oid, OidEntry)` key/value pairs
-    pub fn iter(&self) -> impl Iterator<Item = (&Oid<'static>, &OidEntry)> {
+    pub fn iter(&self) -> impl Iterator<Item = (&Oid<'a>, &OidEntry)> {
         self.map.iter()
     }
 
@@ -214,7 +214,7 @@ impl OidRegistry {
     ///     // do something
     /// }
     /// ```
-    pub fn iter_by_sn<S: Into<String>>(&self, sn: S) -> impl Iterator<Item = (&Oid<'static>, &OidEntry)> {
+    pub fn iter_by_sn<S: Into<String>>(&self, sn: S) -> impl Iterator<Item = (&Oid<'a>, &OidEntry)> {
         let s = sn.into();
         self.map.iter().filter(move |(_, entry)| entry.sn == s)
     }
