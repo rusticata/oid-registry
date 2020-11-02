@@ -1,6 +1,6 @@
 [package]
 name = "oid-registry"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
 license = "MIT/Apache-2.0"
 description = "Object Identifier (OID) database"
@@ -28,4 +28,4 @@ x509 = []
 x962 = []
 
 [dependencies]
-der-parser = "4.1"
+der-parser = "5.0.0-beta1"
