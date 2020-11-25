@@ -11,6 +11,16 @@ edition = "2018"
 build = "build.rs"
 readme = "README.md"
 
+include = [
+  "LICENSE-*",
+  "README.md",
+  ".gitignore",
+  "Cargo.toml",
+  "assets/*.txt",
+  "build.rs",
+  "src/*.rs",
+]
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
