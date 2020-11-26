@@ -246,6 +246,7 @@ pub fn format_oid(oid: &Oid, registry: &OidRegistry) -> String {
 
 include!(concat!(env!("OUT_DIR"), "/oid_db.rs"));
 
+#[rustfmt::skip::macros(oid)]
 #[cfg(test)]
 mod tests {
     use super::*;
