@@ -91,6 +91,10 @@ x509	OID_X509_ORGANIZATION_NAME	2.5.4.10	organizationName	Organization Name
 x509	OID_X509_ORGANIZATIONAL_UNIT	2.5.4.11	organizationalUnit	Organizational Unit
 x509	OID_X509_TITLE	2.5.4.12	title	Title
 x509	OID_X509_DESCRIPTION	2.5.4.13	description	Description
+x509	OID_X509_SEARCH_GUIDE	2.5.4.14	searchGuide	Search Guide
+x509	OID_X509_BUSINESS_CATEGORY	2.5.4.15	businessCategory	Business Category
+x509	OID_X509_POSTAL_ADDRESS	2.5.4.16	postalAddress	Postal Address
+x509	OID_X509_POSTAL_CODE	2.5.4.17	postalCode	Postal Code
 #
 x509	OID_X509_GIVEN_NAME	2.5.4.42	givenName	Given Name
 #
