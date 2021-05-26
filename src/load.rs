@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 use std::fs::File;
 use std::io::{BufRead, BufReader, Result, Write};
 use std::path::Path;
@@ -19,7 +19,7 @@ pub struct LoadedEntry {
 }
 
 /// Temporary structure, created when reading a file containing OID declarations
-pub type LoadedMap = HashMap<String, Vec<LoadedEntry>>;
+pub type LoadedMap = BTreeMap<String, Vec<LoadedEntry>>;
 
 /// Load a file to an OID description map
 ///
@@ -32,7 +32,7 @@ pub type LoadedMap = HashMap<String, Vec<LoadedEntry>>;
 /// If `name` is "" then no constant will be written
 ///
 pub fn load_file<P: AsRef<Path>>(path: P) -> Result<LoadedMap> {
-    let mut map = HashMap::new();
+    let mut map = BTreeMap::new();
 
     let file = File::open(path)?;
     for line in BufReader::new(file).lines() {
