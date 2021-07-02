@@ -233,7 +233,7 @@ impl<'a> OidRegistry<'a> {
     #[cfg(feature = "crypto")]
     #[cfg_attr(docsrs, doc(cfg(feature = "crypto")))]
     pub fn with_all_crypto(self) -> Self {
-        self.with_crypto().with_pkcs7().with_pkcs9()
+        self.with_crypto().with_pkcs7().with_pkcs9().with_pkcs12()
     }
 }
 
