@@ -75,7 +75,8 @@
 // #![deny(intra_doc_link_resolution_failure)]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
-use der_parser::{oid, oid::Oid};
+use der_parser::oid;
+pub use der_parser::oid::Oid;
 use std::borrow::Cow;
 use std::collections::HashMap;
 use std::convert::From;
