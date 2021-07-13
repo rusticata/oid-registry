@@ -12,6 +12,7 @@ x962	OID_KEY_TYPE_EC_PUBLIC_KEY	1.2.840.10045.2.1	id-ecPublicKey	Elliptic curve 
 x962	OID_SIG_ECDSA_WITH_SHA224	1.2.840.10045.4.3.1	ecdsa-with-SHA224	Elliptic curve Digital Signature Algorithm (DSA) coupled with the Secure Hash Algorithm 224 (SHA224) algorithm
 x962	OID_SIG_ECDSA_WITH_SHA256	1.2.840.10045.4.3.2	ecdsa-with-SHA256	Elliptic curve Digital Signature Algorithm (DSA) coupled with the Secure Hash Algorithm 256 (SHA256) algorithm
 x962	OID_SIG_ECDSA_WITH_SHA384	1.2.840.10045.4.3.3	ecdsa-with-SHA384	Elliptic curve Digital Signature Algorithm (DSA) coupled with the Secure Hash Algorithm 384 (SHA384) algorithm
+x962	OID_SIG_ECDSA_WITH_SHA512	1.2.840.10045.4.3.4	ecdsa-with-SHA512	Elliptic curve Digital Signature Algorithm (DSA) coupled with the Secure Hash Algorithm 512 (SHA512) algorithm
 
 pkcs1	OID_PKCS1_RSAENCRYPTION	1.2.840.113549.1.1.1	rsaEncryption	RSAES-PKCS1-v1_5 encryption scheme
 pkcs1	OID_PKCS1_MD2WITHRSAENC	1.2.840.113549.1.1.2	md2WithRSAEncryption	MD2 with RSA encryption
