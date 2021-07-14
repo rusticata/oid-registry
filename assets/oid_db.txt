@@ -145,5 +145,7 @@ x509	OID_X509_EXT_INHIBITANT_ANY_POLICY	2.5.29.54	inhibitantAnyPolicy	X509v3 Inh
 nist-algs	OID_NIST_ENC_AES256_CBC	2.16.840.1.101.3.4.1.42	aes-256-cbc	256-bit Advanced Encryption Standard (AES) algorithm with Cipher-Block Chaining (CBC) mode of operation
 
 nist-algs	OID_NIST_HASH_SHA256	2.16.840.1.101.3.4.2.1	sha256	Secure Hash Algorithm that uses a 256 bit key (SHA256)
+nist-algs	OID_NIST_HASH_SHA384	2.16.840.1.101.3.4.2.2	sha384	Secure Hash Algorithm that uses a 384 bit key (SHA384)
+nist-algs	OID_NIST_HASH_SHA512	2.16.840.1.101.3.4.2.3	sha512	Secure Hash Algorithm that uses a 512 bit key (SHA512)
 
 x509	OID_X509_EXT_CERT_TYPE	2.16.840.1.113730.1.1	nsCertType	X.509 v3 Certificate Type
