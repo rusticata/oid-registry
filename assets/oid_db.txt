@@ -101,6 +101,7 @@ x509	OID_X509_ALIASED_ENTRY_NAME	2.5.4.1	aliasedEntryName	Aliased entry/object n
 x509	OID_X509_KNOWLEDGE_INFORMATION	2.5.4.2	knowledgeInformation	'knowledgeInformation' attribute type
 x509	OID_X509_COMMON_NAME	2.5.4.3	commonName	Common Name
 x509	OID_X509_SURNAME	2.5.4.4	surname	Surname
+x509	OID_X509_SERIALNUMBER	2.5.4.5	serialNumber	Serial Number
 x509	OID_X509_COUNTRY_NAME	2.5.4.6	countryName	Country Name
 x509	OID_X509_LOCALITY_NAME	2.5.4.7	localityName	Locality Name
 x509	OID_X509_STATE_OR_PROVINCE_NAME	2.5.4.8	stateOrProvinceName	State or Province name
@@ -114,6 +115,7 @@ x509	OID_X509_BUSINESS_CATEGORY	2.5.4.15	businessCategory	Business Category
 x509	OID_X509_POSTAL_ADDRESS	2.5.4.16	postalAddress	Postal Address
 x509	OID_X509_POSTAL_CODE	2.5.4.17	postalCode	Postal Code
 #
+x509	OID_X509_NAME	2.5.4.41	name	Name
 x509	OID_X509_GIVEN_NAME	2.5.4.42	givenName	Given Name
 #
 x509	OID_X509_UNIQUE_IDENTIFIER	2.5.4.45	uniqueIdentifier	Bit String Unique Identifier
