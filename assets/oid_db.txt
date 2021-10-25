@@ -127,6 +127,15 @@ x509	OID_X509_GIVEN_NAME	2.5.4.42	givenName	Given Name
 x509	OID_X509_UNIQUE_IDENTIFIER	2.5.4.45	uniqueIdentifier	Bit String Unique Identifier
 
 # https://www.alvestrand.no/objectid/2.5.29.html
+x509	OID_X509_OBSOLETE_AUTHORITY_KEY_IDENTIFIER	2.5.29.1	oldAuthorityKeyIdentifier	X509v3 Authority Key Identifier (obsolete)
+x509	OID_X509_OBSOLETE_KEY_ATTRIBUTES	2.5.29.2	oldKeyAttributes	X509v3 Key Attributes (obsolete)
+x509	OID_X509_OBSOLETE_CERTIFICATE_POLICIES	2.5.29.3	oldCertificatePolicies	X509v3 Certificate Policies (obsolete)
+x509	OID_X509_OBSOLETE_KEY_USAGE	2.5.29.4	oldKeyUsage	X509v3 Key Usage Restriction (obsolete)
+x509	OID_X509_OBSOLETE_POLICY_MAPPING	2.5.29.5	oldPolicyMapping	X509v3 Policy Mapping (obsolete)
+x509	OID_X509_OBSOLETE_SUBTREES_CONSTRAINT	2.5.29.6	oldSubtreesConstraint	X509v3 Subtrees Constraint (obsolete)
+x509	OID_X509_OBSOLETE_SUBJECT_ALT_NAME	2.5.29.7	oldSubjectAltNAme	X509v3 Subject Alternative Name (obsolete)
+x509	OID_X509_OBSOLETE_ISSUER_ALT_NAME	2.5.29.8	oldIssuerAltNAme	X509v3 Issuer Alternative Name (obsolete)
+
 x509	OID_X509_EXT_SUBJECT_KEY_IDENTIFIER	2.5.29.14	subjectKeyIdentifier	X509v3 Subject Key Identifier
 x509	OID_X509_EXT_KEY_USAGE	2.5.29.15	keyUsage	X509v3 Key Usage
 x509	OID_X509_EXT_PRIVATE_KEY_USAGE_PERIOD	2.5.29.16	privateKeyUsagePeriod	X509v3 Private Key Usage Period
