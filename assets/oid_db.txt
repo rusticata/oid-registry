@@ -44,6 +44,8 @@ pkcs9	OID_PKCS9_SIGNING_TIME	1.2.840.113549.1.9.5	signing-time	id-signingTime
 pkcs9	OID_PKCS9_EXTENSION_REQUEST	1.2.840.113549.1.9.14	extensionRequest	Extension list for Certification Requests
 pkcs9	OID_PKCS9_SMIME_CAPABILITIES	1.2.840.113549.1.9.15	smimeCapabilities	aa-smimeCapabilities
 
+pkcs9	OID_PKCS9_FRIENDLY_NAME	1.2.840.113549.1.9.20	friendlyName	PKCS #9 attribute friendlyName (for PKCS #12)
+
 pkcs12	OID_PKCS12	1.2.840.113549.1.12	pkcs-12	Public-Key Cryptography Standard (PKCS) #12
 pkcs12	OID_PKCS12_PBEIDS	1.2.840.113549.1.12.1	pkcs-12PbeIds	PKCS #12 Password Based Encryption IDs
 pkcs12	OID_PKCS12_PBE_SHA1_128RC4	1.2.840.113549.1.12.1.1	pbeWithSHAAnd128BitRC4	PKCS #12 Password Based Encryption With SHA-1 and 128-bit RC4
