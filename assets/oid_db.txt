@@ -125,9 +125,11 @@ x509	OID_X509_POSTAL_CODE	2.5.4.17	postalCode	Postal Code
 #
 x509	OID_X509_NAME	2.5.4.41	name	Name
 x509	OID_X509_GIVEN_NAME	2.5.4.42	givenName	Given Name
+x509	OID_X509_INITIALS	2.5.4.43	initials	Initials of an individual's name
+x509	OID_X509_GENERATION_QUALIFIER	2.5.4.44	generationQualifier	Generation information to qualify an individual's name
+x509	OID_X509_UNIQUE_IDENTIFIER	2.5.4.45	uniqueIdentifier	Unique Identifier
+x509	OID_X509_DN_QUALIFIER	2.5.4.46	dnQualifier	DN Qualifier
 #
-x509	OID_X509_UNIQUE_IDENTIFIER	2.5.4.45	uniqueIdentifier	Bit String Unique Identifier
-
 # https://www.alvestrand.no/objectid/2.5.29.html
 x509	OID_X509_OBSOLETE_AUTHORITY_KEY_IDENTIFIER	2.5.29.1	oldAuthorityKeyIdentifier	X509v3 Authority Key Identifier (obsolete)
 x509	OID_X509_OBSOLETE_KEY_ATTRIBUTES	2.5.29.2	oldKeyAttributes	X509v3 Key Attributes (obsolete)
