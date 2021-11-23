@@ -7,6 +7,7 @@
 
 x509	OID_DOMAIN_COMPONENT	0.9.2342.19200300.100.1.25	domainComponent	Domain component
 
+x509	OID_KEY_TYPE_DSA	1.2.840.10040.4.1	id-dsa	DSA subject public key
 x509	OID_SIG_DSA_WITH_SHA1	1.2.840.10040.4.3	dsa-with-sha1	DSA signature generated with SHA-1 algorithm
 
 x962	OID_KEY_TYPE_EC_PUBLIC_KEY	1.2.840.10045.2.1	id-ecPublicKey	Elliptic curve public key cryptography
