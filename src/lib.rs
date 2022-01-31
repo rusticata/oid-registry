@@ -44,8 +44,8 @@
 //! This is why the registry allows adding new entries after construction:
 //!
 //! ```rust
+//! use asn1_rs::oid;
 //! use oid_registry::{OidEntry, OidRegistry};
-//! use der_parser::oid;
 //!
 //! let mut registry = OidRegistry::default();
 //!
@@ -75,8 +75,10 @@
 // #![deny(intra_doc_link_resolution_failure)]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
-use der_parser::oid;
-pub use der_parser::oid::Oid;
+pub use asn1_rs;
+pub use asn1_rs::Oid;
+
+use asn1_rs::oid;
 use std::borrow::Cow;
 use std::collections::HashMap;
 use std::convert::From;
@@ -133,7 +135,7 @@ impl From<(&'static str, &'static str)> for OidEntry {
 /// # Example
 ///
 /// ```rust
-/// use der_parser::{oid, oid::Oid};
+/// use asn1_rs::{oid, Oid};
 /// use oid_registry::{OidEntry, OidRegistry};
 ///
 /// let mut registry = OidRegistry::default()
