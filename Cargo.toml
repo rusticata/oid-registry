@@ -40,4 +40,4 @@ x509 = []
 x962 = []
 
 [dependencies]
-asn1-rs = { version="0.3.0", git="https://github.com/rusticata/asn1-rs" }
+asn1-rs = "0.3"
