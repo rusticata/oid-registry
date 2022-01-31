@@ -26,7 +26,8 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [features]
-default = []
+default = ["registry"]
+registry = []
 crypto = ["kdf","pkcs1","pkcs7","pkcs9","pkcs12","nist_algs","x962"]
 kdf = []
 ms_spc = []
