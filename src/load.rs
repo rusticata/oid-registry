@@ -42,7 +42,7 @@ pub fn load_file<P: AsRef<Path>>(path: P) -> Result<LoadedMap> {
         }
         // split by tabs
         let mut iter = line.splitn(5, '\t');
-        let feature = iter.next().expect("invalid oid_db format: missing feature").replace("-", "_");
+        let feature = iter.next().expect("invalid oid_db format: missing feature").replace('-', "_");
         let name = iter.next().expect("invalid oid_db format: missing name").to_string();
         let oid = iter.next().expect("invalid oid_db format: missing OID").to_string();
         let sn = iter.next().expect("invalid oid_db format: missing short name").to_string();
