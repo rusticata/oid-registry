@@ -5,6 +5,7 @@
 # if <name> is "" then no constant will be written
 #
 
+x509	OID_USERID	0.9.2342.19200300.100.1.1	uid	User ID
 x509	OID_DOMAIN_COMPONENT	0.9.2342.19200300.100.1.25	domainComponent	Domain component
 
 x509	OID_SIG_GOST_R3411_94_WITH_R3410_2001	1.2.643.2.2.3	id-GostR3411-94-with-GostR3410-2001	GOST R 3411-94 with GOST R 3410-2001
