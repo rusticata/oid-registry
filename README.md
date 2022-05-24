@@ -56,6 +56,14 @@ registry.insert(oid!(1.2.3.5), ("shortName", "A description"));
 
 ```
 
+## Versions and compatibility with `asn1-rs`
+
+Versions of `oid-registry` must be chosen specifically, to depend on a precise version of `asn1-rs`.
+The following table summarizes the matching versions:
+
+- `oid-registry` 0.6.x depends on `asn1-rs` 0.5.0
+- `oid-registry` 0.5.x depends on `asn1-rs` 0.4.0
+
 ## Contributing OIDs
 
 All OID values, constants, and features are derived from files in the `assets` directory in the
