@@ -1,6 +1,6 @@
 use std::env;
 
-include!(concat!(env!("CARGO_MANIFEST_DIR"), "/src/load.rs"));
+include!("src/load.rs");
 
 fn main() -> Result<()> {
     println!("cargo:rerun-if-changed=assets/oid_db.txt");
