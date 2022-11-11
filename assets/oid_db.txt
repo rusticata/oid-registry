@@ -53,6 +53,8 @@ pkcs9	OID_PKCS9_CONTENT_TYPE	1.2.840.113549.1.9.3	contentType	id-contentType
 pkcs9	OID_PKCS9_ID_MESSAGE_DIGEST	1.2.840.113549.1.9.4	id-messageDigest	id-messageDigest
 pkcs9	OID_PKCS9_SIGNING_TIME	1.2.840.113549.1.9.5	signing-time	id-signingTime
 
+pkcs9	OID_PKCS9_CHALLENGE_PASSWORD	1.2.840.113549.1.9.7	challengePassword	PKCS #9 challenge password (as specified for PKSC#10 in RFC2986)
+
 pkcs9	OID_PKCS9_EXTENSION_REQUEST	1.2.840.113549.1.9.14	extensionRequest	Extension list for Certification Requests
 pkcs9	OID_PKCS9_SMIME_CAPABILITIES	1.2.840.113549.1.9.15	smimeCapabilities	aa-smimeCapabilities
 
