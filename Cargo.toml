@@ -40,4 +40,4 @@ x509 = []
 x962 = []
 
 [dependencies]
-asn1-rs = "0.5"
+asn1-rs = "0.6"
