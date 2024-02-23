@@ -1,6 +1,6 @@
 [package]
 name = "oid-registry"
-version = "0.6.1"
+version = "0.7.0"
 authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
 license = "MIT OR Apache-2.0"
 description = "Object Identifier (OID) database"
@@ -10,6 +10,7 @@ repository = "https://github.com/rusticata/oid-registry.git"
 edition = "2018"
 build = "build.rs"
 readme = "README.md"
+rust-version = "1.63"
 
 include = [
   "LICENSE-*",

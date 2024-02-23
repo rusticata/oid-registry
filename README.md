@@ -5,7 +5,7 @@
 [![docs.rs](https://docs.rs/oid-registry/badge.svg)](https://docs.rs/oid-registry)
 [![crates.io](https://img.shields.io/crates/v/oid-registry.svg)](https://crates.io/crates/oid-registry)
 [![Github CI](https://github.com/rusticata/oid-registry/workflows/Continuous%20integration/badge.svg)](https://github.com/rusticata/oid-registry/actions)
-[![Minimum rustc version](https://img.shields.io/badge/rustc-1.53.0+-lightgray.svg)](#rust-version-requirements)
+[![Minimum rustc version](https://img.shields.io/badge/rustc-1.63.0+-lightgray.svg)](#rust-version-requirements)
 # OID Registry
 
 This crate is a helper crate, containing a database of OID objects. These objects are intended
@@ -61,6 +61,7 @@ registry.insert(oid!(1.2.3.5), ("shortName", "A description"));
 Versions of `oid-registry` must be chosen specifically, to depend on a precise version of `asn1-rs`.
 The following table summarizes the matching versions:
 
+- `oid-registry` 0.7.x depends on `asn1-rs` 0.6.0
 - `oid-registry` 0.6.x depends on `asn1-rs` 0.5.0
 - `oid-registry` 0.5.x depends on `asn1-rs` 0.4.0
 
