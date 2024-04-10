@@ -42,3 +42,9 @@ x962 = []
 
 [dependencies]
 asn1-rs = "0.6"
+
+[package.metadata.cargo_check_external_types]
+allowed_external_types = [
+  "asn1_rs",
+  "asn1_rs::asn1_types::oid::Oid",
+]
