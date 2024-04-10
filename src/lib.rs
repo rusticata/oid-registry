@@ -90,7 +90,6 @@ pub use asn1_rs::Oid;
 use asn1_rs::oid;
 use std::borrow::Cow;
 use std::collections::HashMap;
-use std::convert::From;
 
 mod load;
 
