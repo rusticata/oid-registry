@@ -74,7 +74,7 @@ See `load_file` for documentation of the file format.
 
 ## Rust version requirements
 
-`oid-registry` requires **Rustc version 1.53 or greater**, based on proc-macro
+`oid-registry` requires **Rustc version 1.63 or greater**, based on proc-macro
 attributes support and `asn1-rs`.
 
 # License
