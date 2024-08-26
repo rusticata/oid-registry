@@ -1,6 +1,6 @@
 [package]
 name = "oid-registry"
-version = "0.7.0"
+version = "0.7.1"
 authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
 license = "MIT OR Apache-2.0"
 description = "Object Identifier (OID) database"
