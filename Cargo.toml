@@ -42,7 +42,7 @@ x509 = []
 x962 = []
 
 [dependencies]
-asn1-rs = "0.6"
+asn1-rs = "0.7"
 
 [package.metadata.cargo_check_external_types]
 allowed_external_types = [
