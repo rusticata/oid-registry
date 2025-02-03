@@ -182,7 +182,7 @@ x509	OID_X509_EXT_EXTENDED_KEY_USAGE	2.5.29.37	extendedKeyUsage	X509v3 Extended 
 #
 x509	OID_X509_EXT_FRESHEST_CRL	2.5.29.46	freshestCRL	X509v3 Freshest CRL
 #
-x509	OID_X509_EXT_INHIBITANT_ANY_POLICY	2.5.29.54	inhibitantAnyPolicy	X509v3 Inhibit Any-policy
+x509	OID_X509_EXT_INHIBIT_ANY_POLICY	2.5.29.54	inhibitAnyPolicy	X509v3 Inhibit Any-policy
 
 nist-algs	OID_NIST_ENC_AES256_CBC	2.16.840.1.101.3.4.1.42	aes-256-cbc	256-bit Advanced Encryption Standard (AES) algorithm with Cipher-Block Chaining (CBC) mode of operation
 
