@@ -5,7 +5,7 @@
 [![docs.rs](https://docs.rs/oid-registry/badge.svg)](https://docs.rs/oid-registry)
 [![crates.io](https://img.shields.io/crates/v/oid-registry.svg)](https://crates.io/crates/oid-registry)
 [![Github CI](https://github.com/rusticata/oid-registry/workflows/Continuous%20integration/badge.svg)](https://github.com/rusticata/oid-registry/actions)
-[![Minimum rustc version](https://img.shields.io/badge/rustc-1.63.0+-lightgray.svg)](#rust-version-requirements)
+[![Minimum rustc version](https://img.shields.io/badge/rustc-1.65.0+-lightgray.svg)](#rust-version-requirements)
 # OID Registry
 
 This crate is a helper crate, containing a database of OID objects. These objects are intended
@@ -74,7 +74,7 @@ See `load_file` for documentation of the file format.
 
 ## Rust version requirements
 
-`oid-registry` requires **Rustc version 1.63 or greater**, based on proc-macro
+`oid-registry` requires **Rustc version 1.65 or greater**, based on proc-macro
 attributes support and `asn1-rs`.
 
 # License
