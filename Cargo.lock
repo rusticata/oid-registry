@@ -4,8 +4,8 @@ version = 3
 
 [[package]]
 name = "asn1-rs"
-version = "0.8.0"
-source = "git+https://github.com/rusticata/asn1-rs?branch=master#c107d32135bf9feed80c8911f44bc1a5a556dd4e"
+version = "0.8.0-beta.1"
+source = "git+https://github.com/rusticata/asn1-rs?branch=master#bad265dea09ea351811f5dc98085d93c1d0dcc8d"
 dependencies = [
  "asn1-rs-derive",
  "asn1-rs-impl",
@@ -20,7 +20,7 @@ dependencies = [
 [[package]]
 name = "asn1-rs-derive"
 version = "0.7.0"
-source = "git+https://github.com/rusticata/asn1-rs?branch=master#c107d32135bf9feed80c8911f44bc1a5a556dd4e"
+source = "git+https://github.com/rusticata/asn1-rs?branch=master#bad265dea09ea351811f5dc98085d93c1d0dcc8d"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -31,7 +31,7 @@ dependencies = [
 [[package]]
 name = "asn1-rs-impl"
 version = "0.3.0"
-source = "git+https://github.com/rusticata/asn1-rs?branch=master#c107d32135bf9feed80c8911f44bc1a5a556dd4e"
+source = "git+https://github.com/rusticata/asn1-rs?branch=master#bad265dea09ea351811f5dc98085d93c1d0dcc8d"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -99,7 +99,7 @@ dependencies = [
 
 [[package]]
 name = "oid-registry"
-version = "0.9.0"
+version = "0.9.0-beta.1"
 dependencies = [
  "asn1-rs",
 ]
