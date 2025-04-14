@@ -49,6 +49,3 @@ allowed_external_types = [
   "asn1_rs",
   "asn1_rs::asn1_types::oid::Oid",
 ]
-
-[patch.crates-io]
-asn1-rs = { git="https://github.com/rusticata/asn1-rs", branch="master" }

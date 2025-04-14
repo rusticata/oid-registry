@@ -5,7 +5,8 @@ version = 3
 [[package]]
 name = "asn1-rs"
 version = "0.8.0-beta.1"
-source = "git+https://github.com/rusticata/asn1-rs?branch=master#bad265dea09ea351811f5dc98085d93c1d0dcc8d"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a606c1df702c88d5de54d19f3edf48ba1e393bc9c791e1d68d3f6e68f9bddd4"
 dependencies = [
  "asn1-rs-derive",
  "asn1-rs-impl",
@@ -20,7 +21,8 @@ dependencies = [
 [[package]]
 name = "asn1-rs-derive"
 version = "0.7.0"
-source = "git+https://github.com/rusticata/asn1-rs?branch=master#bad265dea09ea351811f5dc98085d93c1d0dcc8d"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f55c9ab2612aafd3227c0125fe3e7200e0eebf88be213f9ebbd72ee34b259604"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -31,7 +33,8 @@ dependencies = [
 [[package]]
 name = "asn1-rs-impl"
 version = "0.3.0"
-source = "git+https://github.com/rusticata/asn1-rs?branch=master#bad265dea09ea351811f5dc98085d93c1d0dcc8d"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ee963fda5b644c1b4471b3f2bfe0c8585838d9b87839c2c930048d3cf2c0116c"
 dependencies = [
  "proc-macro2",
  "quote",
