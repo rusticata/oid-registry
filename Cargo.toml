@@ -40,6 +40,7 @@ pkcs12 = []
 x500 = []
 x509 = []
 x962 = []
+fips205 = []
 
 [dependencies]
 asn1-rs = "0.8.0-beta.1"
