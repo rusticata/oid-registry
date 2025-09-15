@@ -1,9 +1,3 @@
-//! [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE-MIT)
-//! [![Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE-APACHE)
-//! [![docs.rs](https://docs.rs/oid-registry/badge.svg)](https://docs.rs/oid-registry)
-//! [![crates.io](https://img.shields.io/crates/v/oid-registry.svg)](https://crates.io/crates/oid-registry)
-//! [![Github CI](https://github.com/rusticata/oid-registry/workflows/Continuous%20integration/badge.svg)](https://github.com/rusticata/oid-registry/actions)
-//! [![Minimum rustc version](https://img.shields.io/badge/rustc-1.65.0+-lightgray.svg)](#rust-version-requirements)
 //! # OID Registry
 //!
 //! This crate is a helper crate, containing a database of OID objects. These objects are intended

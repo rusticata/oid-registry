@@ -1,11 +1,13 @@
-<!-- cargo-sync-readme start -->
-
+![Maintenance](https://img.shields.io/badge/maintenance-activly--developed-brightgreen.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE-MIT)
 [![Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE-APACHE)
 [![docs.rs](https://docs.rs/oid-registry/badge.svg)](https://docs.rs/oid-registry)
 [![crates.io](https://img.shields.io/crates/v/oid-registry.svg)](https://crates.io/crates/oid-registry)
 [![Github CI](https://github.com/rusticata/oid-registry/workflows/Continuous%20integration/badge.svg)](https://github.com/rusticata/oid-registry/actions)
 [![Minimum rustc version](https://img.shields.io/badge/rustc-1.65.0+-lightgray.svg)](#rust-version-requirements)
+
+<!-- cargo-rdme start -->
+
 # OID Registry
 
 This crate is a helper crate, containing a database of OID objects. These objects are intended
@@ -70,7 +72,8 @@ The following table summarizes the matching versions:
 All OID values, constants, and features are derived from files in the `assets` directory in the
 build script (see `build.rs`).
 See `load_file` for documentation of the file format.
-<!-- cargo-sync-readme end -->
+
+<!-- cargo-rdme end -->
 
 ## Rust version requirements
 
